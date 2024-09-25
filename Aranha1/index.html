@@ -1,0 +1,172 @@
+<html lang="pt-br">
+
+<head>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+  <title>Guiminamflix</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Chakra Petch', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(135deg, #ff2a6d, #4c0063, #1b1464);
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .web-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 1%, transparent 1.5%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 1%, transparent 1.5%);
+      background-size: 300px 300px;
+      animation: webMove 60s linear infinite;
+    }
+
+    @keyframes webMove {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 300px 300px;
+      }
+    }
+
+    .glitch-effect {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: repeating-linear-gradient(to bottom,
+          transparent 0px,
+          rgba(0, 255, 255, 0.03) 1px,
+          transparent 2px);
+      background-size: 100% 4px;
+      animation: glitchEffect 0.3s infinite;
+    }
+
+    @keyframes glitchEffect {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 4px;
+      }
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff2a6d, 0 0 20px #ff2a6d, 0 0 30px #ff2a6d;
+    }
+
+    .chamada,
+    .categoria {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 42, 109, 0.3);
+    }
+
+    .categoria-videos {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+    }
+
+    .categoria-videos img {
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s ease;
+      border: 2px solid transparent;
+      border-radius: 5px;
+    }
+
+    .categoria-videos img:hover {
+      transform: scale(1.1);
+      border-color: #ff2a6d;
+      box-shadow: 0 0 15px #ff2a6d;
+    }
+  </style>
+</head>
+
+<body>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <div class="background"></div>
+  <div class="web-overlay"></div>
+  <div class="glitch-effect"></div>
+  <header>VITORFLIX</header>
+  <section class="chamada">
+    <div class="chamada-texto">
+      <h1>ATRAVÉS DO ARANHAVERSO</h1>
+      <p>#homem-aranha</p>
+    </div>
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+    </div>
+  </section>
+  <section class="categoria">
+    <h2>Filmes e séries</h2>
+    <div class="categoria-videos">
+      <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
+        <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg">
+      </a>
+      <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
+        <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg">
+      </a>
+      <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
+        <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg">
+      </a>
+      <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
+        <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg">
+      </a>
+      <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
+        <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg">
+      </a>
+    </div>
+  </section>
+
+</body>
+
+</html>
